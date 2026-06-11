@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>O Sistema de Inventário Arcano de Valdrik</title>
+</head>
+<body>
+
+    <div id="painel-dimensoes" class="painel-topo">
+        Dimensões do Baú: <span id="largura-janela">0</span>px × <span id="altura-janela">0</span>px
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Mochila Infinita de JavaScript</h1>
+            <p>Ajudante de Campo de Valdrik Ironforge</p>
+        </header>
+
+        <section class="paineis-controle">
+            <div class="card-painel">
+                <h2>Forjar Novo Item</h2>
+                <form id="form-compra">
+                    <div class="grupo-campo">
+                        <label for="item-nome">Nome do Item:</label>
+                        <input type="text" id="item-nome" required placeholder="Ex: Machado Rúnico">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="item-preco">Preço (Ouro):</label>
+                        <input type="number" id="item-preco" min="1" required placeholder="0">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="item-quantidade">Quantidade:</label>
+                        <input type="number" id="item-quantidade" min="1" required placeholder="0">
+                    </div>
+                    
+                    <div class="grupo-campo">
+                        <label for="item-categoria">Categoria:</label>
+                        <select id="item-categoria" required>
+                            <option value="Armas">Armas</option>
+                            <option value="Defesas">Defesas</option>
+                            <option value="Poções">Poções</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="item-imagem">Imagem do Equipamento (Arquivo Local):</label>
+                        <input type="file" id="item-imagem" accept="image/*" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-sucesso">Comprar e Guardar</button>
+                </form>
+            </div>
+
+            <div class="card-painel conjuracoes">
+                <h2>Grimório de Feitiços</h2>
+                <div class="botoes-acoes">
+                    <button id="btn-desconto" class="btn btn-ouro">Pechincha Arcana (-10% co)</button>
+                    <button id="btn-filtrar-pocoes" class="btn btn-magia">Visão Alquímica (Poções)</button>
+                    <button id="btn-restaurar" class="btn btn-padrao">Restaurar Inventário</button>
+                    <button id="btn-contar-ouro" class="btn btn-alerta">Contar Ouro</button>
+                </div>
+                
+                <div id="resultado-ouro" class="painel-feedback"></div>
+            </div>
+        </section>
+
+        <section class="inventario-container">
+            <h2>Itens na Mochila Infinita</h2>
+            <div id="esteira-itens" class="grid-inventario"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
