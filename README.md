@@ -1,12 +1,3 @@
-# 🎒 O Sistema de Inventário Arcano de Valdrik
-
-Análise e Desenvolvimento de Sistemas (ADS) — 1º Semestre  
-**Componente Curricular:** Desenvolvimento Web Front-End  
-**Professor:** Heber Castro  
-**Instituição:** Escola SENAI "Engº Octávio Marcondes Ferraz" — Ribeirão Preto/SP
-
----
-
 ## 📖 Contexto e Lore do Projeto
 Na pacata Vila de Valirian, o lendário guerreiro Valdrik Ironforge descobriu um antigo artefato mágico conhecido como a **Mochila Infinita de JavaScript**. Diferente dos baús de madeira tradicionais, este artefato consegue armazenar uma quantidade ilimitada de equipamentos e organizá-los instantaneamente através de comandos lógicos arcanos. 
 
